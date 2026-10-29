@@ -18,3 +18,17 @@
 | Cylinder boiler-control stats at or above the Evohome DHW setpoint | Annual | Homeowner |
 | Cylinder sensor heat-transfer paste in place | Annual (with the cylinder inspection) | Homeowner |
 | Junction box: terminals tight, labels legible, no heat marks | Annual, isolated | Competent person |
+| **RCD/RCBO test buttons** (every RCBO) | 6-monthly | Homeowner |
+| **Electrical installation condition report (EICR)** | 10 years (owner-occupied) or on change of occupancy | Registered electrician |
+| Smoke alarm replacement (date label) | Per manufacturer (typically 10 years) | Competent person |
+| Aico interface function test (fire, CO, fault, sound-all) | Annual | Homeowner |
+| Intruder alarm service and battery check | Annual | Homeowner / installer |
+| Lock, keypad and sensor batteries (Zigbee, BLE) | As reported (battery-low automation) | Homeowner |
+| Stopcock operated (prove it turns and isolates) | Annual | Homeowner |
+| Leak sensors and tundish plates tested | 6-monthly | Homeowner |
+| Mains water meter zero / pressure sensor check | Annual | Homeowner |
+| EV charger inspection | Annual | Competent person |
+| Router and access-point firmware | Quarterly | Homeowner |
+| Home Assistant, add-on and ESPHome updates (one board first) | Monthly | Homeowner |
+| Purifier / humidifier / aircon filters | Per manufacturer | Homeowner |
+| Robot mower service and blades | Annual / as needed | Homeowner |

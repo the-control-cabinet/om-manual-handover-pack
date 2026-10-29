@@ -24,13 +24,14 @@
 | [01 Asset register](docs/01-asset-register.md) | Plant and controls inventory |
 | [02 Planned maintenance](docs/02-maintenance-schedule.md) | Tasks, intervals, who |
 | [03 Records and reversals](docs/03-records-and-reversals.md) | Modification register with records and reversals; open and closed checks |
-| [04 Safety-critical devices and isolation](docs/04-safety-critical-devices-and-isolation.md) | Isolation points, devices never to be bypassed, re-energisation checks |
+| [04 Safety-critical devices and isolation](docs/04-safety-critical-devices-and-isolation.md) | Isolation points (electrical, water, gas), devices never to be bypassed, re-energisation checks |
+| [05 System index](docs/05-system-index.md) | Every building system and where it's documented |
 
 ## Roadmap
-- [x] Asset register first pass (from the Oct 2026 survey)
+- [x] Asset register: whole house by system (first pass)
+- [ ] Consumer unit circuit chart
 - [ ] Maintenance schedule with dates
-- [x] Heating records linked (Evohome A3-A8, plant monitoring, sequence of operation)
-- [ ] Link the remaining system repos
+- [x] Every system linked from the [system index](docs/05-system-index.md)
 - [ ] Annual review
 
 ## Skills demonstrated (as built)

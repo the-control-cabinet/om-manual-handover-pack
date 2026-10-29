@@ -1,20 +1,50 @@
 asset_id,system,item,make_model,location,installed,service_interval,last_service,notes
-B01,Heating,System boiler,Ideal Logic+ System S30 (GC 41-750-68),plant room,2017-05,12 months,,First-generation Logic+ System; no built-in automatic bypass; pump overrun 2 min
-C01,DHW,Unvented cylinder L,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,Boiler-control module fitted; element control removed 2018
-C02,DHW,Unvented cylinder R,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,As C01
-C03,DHW,Immersion element controls (x2),Cotherm combined thermostat + safety cut-out,stored with the cylinders,2017,,,Out of service since 2018; swap procedure A7
-V01,Heating,Zone valve TF (2nd-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
-V02,Heating,Zone valve MF (1st-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
-V03,Heating,Zone valve UF,2-port; head Honeywell Home 40003916-001,plant room,,,,White N/C core capped
-V04,DHW,Zone valve cylinder L,2-port,plant room,2017,,,
-V05,DHW,Zone valve cylinder R,2-port,plant room,2017,,,
-E01,Controls,Evohome controllers (x2),Honeywell Evohome,ground floor / upper floors,2018,,,Radiators and UFH
-E02,Controls,BDR91 relays (x4),Honeywell BDR91,2 at landings; 2 in plant room,2018,,,Radiator; UFH; cylinder L; cylinder R
-E03,Controls,UFH zone controller,Honeywell HCC80R + HCS80,understairs manifold,2018,,,
-E04,Controls,HR92 radiator heads + T87RF wall stats,Honeywell,throughout,2018,batteries as reported,,
-E05,Controls,Cylinder sensors (x2),Honeywell CS92,cylinder element-head top pockets,2018,,,Add heat-transfer paste
-E06,Controls,Hot-water timeswitch,Danfoss TS715Si,utility room,2017,,,Permanent ON; gates both hot-water relays
-J01,Controls,Heating junction box,Installer's external box,plant room,2017,annual check,,Terminal map in the Evohome repo (A4)
-P01,Electrical,Boiler circuit,Wylex B6 30 mA RCBO,consumer unit,,,,Supplies the junction box and timer
-P02,Electrical,Water heater circuit,Wylex B16 30 mA RCBO,consumer unit,,,,Off: immersions disconnected
-M01,Monitoring,Opto input board,Hailege 8-ch AC opto (H-1-1832-8CH),beside the junction box,2026 (planned),,,Own ABS enclosure; 4 inputs
+B01,Heating & DHW,System boiler,Ideal Logic+ System S30 (GC 41-750-68),plant room,2017-05,12 months,,First-generation Logic+ System; no built-in automatic bypass; pump overrun 2 min
+C01,Heating & DHW,Unvented cylinder L,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,Boiler-control module fitted; element control removed 2018
+C02,Heating & DHW,Unvented cylinder R,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,As C01
+C03,Heating & DHW,Immersion element controls (x2),Cotherm combined thermostat + safety cut-out,stored with the cylinders,2017,,,Out of service since 2018; swap procedure A7
+C04,Heating & DHW,Expansion vessels + expansion relief valves (cylinders),per cylinder kit,plant room,2017 (replacement planned),12 months,,Tundish drips under investigation
+V01,Heating & DHW,Zone valve TF (2nd-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
+V02,Heating & DHW,Zone valve MF (1st-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
+V03,Heating & DHW,Zone valve UF,2-port; head Honeywell Home 40003916-001,plant room,,,,White N/C core capped
+V04,Heating & DHW,Zone valve cylinder L,2-port,plant room,2017,,,
+V05,Heating & DHW,Zone valve cylinder R,2-port,plant room,2017,,,
+U01,Heating & DHW,UFH manifold: mixing valve + pump,,understairs,2017,,,
+E01,Heating controls,Evohome controllers (x2),Honeywell Evohome,ground floor / upper floors,2018,,,Radiators and UFH
+E02,Heating controls,BDR91 relays (x4),Honeywell BDR91,2 at landings; 2 in plant room,2018,,,Radiator; UFH; cylinder L; cylinder R
+E03,Heating controls,UFH zone controller,Honeywell HCC80R + HCS80,understairs manifold,2018,,,
+E04,Heating controls,HR92 radiator heads + T87RF wall stats,Honeywell,throughout,2018,batteries as reported,,
+E05,Heating controls,Cylinder sensors (x2),Honeywell CS92,cylinder element-head top pockets,2018,,,Add heat-transfer paste
+E06,Heating controls,Hot-water timeswitch,Danfoss TS715Si,utility room,2017,,,Permanent ON; gates both hot-water relays
+E07,Heating controls,RAMSES-II gateway,ESP-based 868 MHz gateway,PC (interim),2026,,,Wall-adapter connectivity issue open
+J01,Heating controls,Heating junction box,Installer's external box,plant room,2017,annual check,,Terminal map in the Evohome repo (A4)
+H01,Cooling & air,Portable air conditioner,Tuya-based (local control),bedroom,,filter as per manual,,Heating/cooling interlock planned
+H02,Cooling & air,Air purifiers (x2) + purifier/humidifier,vendor cloud,various,,filters as per manual,,IAQ actuators
+H03,Cooling & air,Electric fireplace,BLE-controlled,lounge,,annual,,Blower fault open
+P01,Electrical,Boiler circuit,Wylex B6 30 mA RCBO,consumer unit,2017,RCD test 6-monthly,,Supplies the junction box and timer
+P02,Electrical,Water heater circuit,Wylex B16 30 mA RCBO,consumer unit,2017,RCD test 6-monthly,,Off: immersions disconnected
+P03,Electrical,Intruder alarm circuit (builder-installed alarm),Wylex B6 30 mA RCBO,consumer unit,2017,,,Off: alarm unused
+P04,Electrical,Lighting / outside lights / socket circuits,Wylex RCBOs (B6 / B32),consumer unit,2017,RCD test 6-monthly,,Full circuit chart to complete
+P05,Electrical,Electrical installation (whole house),,whole house,2017,EICR 10 years (owner-occupied) or on change,,
+F01,Fire & CO,Smoke alarms (x2) with RF modules,Aico Ei3030 + Ei3000MRF,per Building Regs,2017,test monthly; replace per date label,,Interlinked by RadioLINK
+F02,Fire & CO,Alarm interface,Aico Ei413 + Shelly Plus i4 DC + Shelly Plus 1,control room,2026-08,annual function test,,Fire/CO/fault to HA; HA can sound all alarms
+S01,Security,Intruder alarm,vendor smart alarm (cloud),whole house,,annual + batteries,,Details withheld
+S02,Security,Smart lock + keypads,vendor BLE lock,front door,,batteries as reported,,Details withheld
+S03,Security,Garage door opener,vendor smart opener,garage,,annual,,
+S04,Security,Doorbell and cameras,vendor cloud,exterior,,annual,,Snapshots used by AI tasks
+W01,Water,Stopcock (whole-house isolation),,see household notes,2017,operate annually,,Isolates hot and cold (cylinders downstream)
+W02,Water,Mains water flow and pressure monitor,TUF-2000M + TS-2 (Modbus RTU) + DFRobot SEN0257,under the utility sink,2026,annual zero check,,mains-water-metering repo
+W03,Water,Leak detection (plates and sensors),Zigbee + tundish plates,kitchen / utility / plant room,2026,test 6-monthly,,layered-leak-detection repo
+W04,Water,Supplier smart water meter,supplier,outside the property,2026,,,Awaiting activation
+N01,Energy,Electricity and gas smart meters,DCC smart meters,meter box,,supplier,,
+N02,Energy,EV charger,myenergi Zappi,driveway,,annual inspection,,
+N03,Energy,Electric vehicles (x2),Tesla,driveway,,manufacturer,,
+L01,Lighting & shading,Lighting,Philips Hue (bridge) + LightwaveRF (Link Plus) + Nanoleaf + others,throughout,,bridge firmware,,
+L02,Lighting & shading,Motorised blinds,Hunter Douglas PowerView Gen 2 (hub),various,,batteries/charging as needed,,
+I01,Head end & networks,Home Assistant host,mini PC (HAOS),control room,2026,backups monthly verified; DR test annual,,head-end-health repo
+I02,Head end & networks,Zigbee coordinator,Sonoff ZBDongle-P (Zigbee2MQTT),control room,2026,,,~93 devices
+I03,Head end & networks,ESPHome fleet,ESP32 / ESP32-S3 boards (13 devices),throughout,2026,update one board first,,esphome-fleet-standards repo
+I04,Head end & networks,Router + mesh access points,ASUS RT-BE88U (AiMesh),various,,firmware quarterly,,No inbound ports for HA
+I05,Head end & networks,Remote access,Home Assistant Cloud,,,,,Encrypted relay
+G01,Outdoor,Robot mower,Bosch Indego,garden,,annual service; blades as needed,,
+A01,Appliances,Washing machine + tumble dryer (monitored),vibration sensors,utility,,,,Cycle-done notifications; water sub-metering

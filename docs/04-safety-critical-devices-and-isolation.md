@@ -9,6 +9,9 @@
 | Heating junction box, BDR91s, zone valves, Danfoss TS715Si | **Boiler: Wylex B6 30 mA RCBO** | The box's only supply; the timer is on the same circuit |
 | Cylinder wiring panels | **Boiler B6 and Water heater: Wylex B16 30 mA RCBO** | Each panel also carries the immersion supply |
 | Boiler internals | Boiler B6 + the boiler's own isolator | **Gas Safe engineer only** |
+| Any other circuit | Its RCBO at the consumer unit | Complete the circuit chart; prove dead at the point of work |
+| Water: whole house | **Stopcock** | Isolates hot and cold: the cylinders' cold feed is downstream |
+| Gas | Meter emergency control valve | Smell gas: valve off, no switches, call the emergency number |
 
 Prove dead at the point of work every time. Long parallel runs can show tens of volts of induced pickup on dead conductors with a high-impedance meter: cross-check before trusting a reading ([A4 §1](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/A4-junction-box-survey-and-wiring.md#1-safe-isolation)).
 
@@ -20,7 +23,8 @@ Prove dead at the point of work every time. Long parallel runs can show tens of 
 | Cylinder temperature/pressure relief valves, expansion relief valves, tundishes | Plant room | G3 discharge safety |
 | **Cotherm element control** (thermostat + safety cut-out), when the immersion is used | Top pocket of the element head (swapped with the CS92) | The immersion must never run without it ([A7](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/A7-immersion-backup-swap-procedure.md)) |
 | Boiler internal limits | Boiler | Gas Safe |
-| Smoke/heat/CO alarms | Separate circuit | Life safety |
+| Smoke/heat/CO alarms and their interface | Separate circuit; HA interface | Life safety: never silence or disable for automation testing |
+| RCBOs | Consumer unit | Shock and fire protection: test 6-monthly |
 
 ## Re-energising the heating
 1. **Danfoss TS715Si on permanent ON** (it still gates both hot-water relays).

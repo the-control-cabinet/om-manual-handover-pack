@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.3.0] - 2026-10-29
+- Whole-house scope: asset register by system (electrical, fire and CO, security, water, energy, lighting and shading, cooling and air, head end, outdoor, appliances); 05 system index linking every repo; whole-house maintenance tasks (RCD tests, EICR, alarms, stopcock, leak tests, firmware, updates); isolation points for water and gas.
+
 ## [0.2.0] - 2026-10-29
 - 03: modification register linked to the Evohome survey docs (A3-A8) and plant monitoring; checks updated (cut-outs closed, bypass likely non-compliant).
 - 04: safety-critical devices and isolation points (new).
