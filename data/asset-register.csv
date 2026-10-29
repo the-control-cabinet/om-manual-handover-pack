@@ -1,4 +1,20 @@
 asset_id,system,item,make_model,location,installed,service_interval,last_service,notes
-B01,Heating,System boiler,Ideal Logic+ System S30,plant room,,12 months,,
-C01,DHW,Unvented cylinder L,250 L indirect,plant room,,12 months,,
-C02,DHW,Unvented cylinder R,250 L indirect,plant room,,12 months,,
+B01,Heating,System boiler,Ideal Logic+ System S30 (GC 41-750-68),plant room,2017-05,12 months,,First-generation Logic+ System; no built-in automatic bypass; pump overrun 2 min
+C01,DHW,Unvented cylinder L,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,Boiler-control module fitted; element control removed 2018
+C02,DHW,Unvented cylinder R,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,As C01
+C03,DHW,Immersion element controls (x2),Cotherm combined thermostat + safety cut-out,stored with the cylinders,2017,,,Out of service since 2018; swap procedure A7
+V01,Heating,Zone valve TF (2nd-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
+V02,Heating,Zone valve MF (1st-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
+V03,Heating,Zone valve UF,2-port; head Honeywell Home 40003916-001,plant room,,,,White N/C core capped
+V04,DHW,Zone valve cylinder L,2-port,plant room,2017,,,
+V05,DHW,Zone valve cylinder R,2-port,plant room,2017,,,
+E01,Controls,Evohome controllers (x2),Honeywell Evohome,ground floor / upper floors,2018,,,Radiators and UFH
+E02,Controls,BDR91 relays (x4),Honeywell BDR91,2 at landings; 2 in plant room,2018,,,Radiator; UFH; cylinder L; cylinder R
+E03,Controls,UFH zone controller,Honeywell HCC80R + HCS80,understairs manifold,2018,,,
+E04,Controls,HR92 radiator heads + T87RF wall stats,Honeywell,throughout,2018,batteries as reported,,
+E05,Controls,Cylinder sensors (x2),Honeywell CS92,cylinder element-head top pockets,2018,,,Add heat-transfer paste
+E06,Controls,Hot-water timeswitch,Danfoss TS715Si,utility room,2017,,,Permanent ON; gates both hot-water relays
+J01,Controls,Heating junction box,Installer's external box,plant room,2017,annual check,,Terminal map in the Evohome repo (A4)
+P01,Electrical,Boiler circuit,Wylex B6 30 mA RCBO,consumer unit,,,,Supplies the junction box and timer
+P02,Electrical,Water heater circuit,Wylex B16 30 mA RCBO,consumer unit,,,,Off: immersions disconnected
+M01,Monitoring,Opto input board,Hailege 8-ch AC opto (H-1-1832-8CH),beside the junction box,2026 (planned),,,Own ABS enclosure; 4 inputs

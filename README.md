@@ -23,12 +23,14 @@
 |---|---|
 | [01 Asset register](docs/01-asset-register.md) | Plant and controls inventory |
 | [02 Planned maintenance](docs/02-maintenance-schedule.md) | Tasks, intervals, who |
-| [03 Records and reversals](docs/03-records-and-reversals.md) | Modifications, how to undo them |
+| [03 Records and reversals](docs/03-records-and-reversals.md) | Modification register with records and reversals; open and closed checks |
+| [04 Safety-critical devices and isolation](docs/04-safety-critical-devices-and-isolation.md) | Isolation points, devices never to be bypassed, re-energisation checks |
 
 ## Roadmap
-- [ ] Asset register first pass
+- [x] Asset register first pass (from the Oct 2026 survey)
 - [ ] Maintenance schedule with dates
-- [ ] Link every system repo
+- [x] Heating records linked (Evohome A3-A8, plant monitoring, sequence of operation)
+- [ ] Link the remaining system repos
 - [ ] Annual review
 
 ## Skills demonstrated (as built)
@@ -38,6 +40,7 @@
 | Asset management | Register with service intervals |
 | Maintenance planning | PPM schedule with responsibilities |
 | Change records | Modifications with reversal procedures |
+| Safety management | Isolation points and a safety-critical device list from a site survey |
 
 📺 [The Control Cabinet on YouTube](https://www.youtube.com/channel/UC5Cupmz7vlfcodpCX7k8iuQ)
 
