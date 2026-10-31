@@ -32,3 +32,5 @@
 | Home Assistant, add-on and ESPHome updates (one board first) | Monthly | Homeowner |
 | Purifier / humidifier / aircon filters | Per manufacturer | Homeowner |
 | Robot mower service and blades | Annual / as needed | Homeowner |
+| Boiler pressure log: note each top-up (date, before/after reading) | Each top-up (currently ~2-weekly) | Homeowner |
+| Cylinder expansion vessel charge (3.5 bar) and relief valves | At each service / if the tundish drips | Competent person |

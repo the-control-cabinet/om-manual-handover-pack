@@ -1,8 +1,8 @@
 asset_id,system,item,make_model,location,installed,service_interval,last_service,notes
-B01,Heating & DHW,System boiler,Ideal Logic+ System S30 (GC 41-750-68),plant room,2017-05,12 months,,First-generation Logic+ System; no built-in automatic bypass; pump overrun 2 min
-C01,Heating & DHW,Unvented cylinder L,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,Boiler-control module fitted; element control removed 2018
+B01,Heating & DHW,System boiler,Ideal Logic+ System S30 (GC 41-750-68),plant room,2017-05,12 months,,No built-in automatic bypass; pump overrun 2 min; supply flex has no earth core (open check); fault history F1/FU/F1
+C01,Heating & DHW,Unvented cylinder L,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,PRV 3.5 bar; vessel charge 3.5 bar; ERV 6 bar; T&P 90 °C / 10 bar; one 3 kW element; element control removed 2018
 C02,Heating & DHW,Unvented cylinder R,Centre Store unvented indirect 250 L (176705),plant room,2017,12 months,,As C01
-C03,Heating & DHW,Immersion element controls (x2),Cotherm combined thermostat + safety cut-out,stored with the cylinders,2017,,,Out of service since 2018; swap procedure A7
+C03,Heating & DHW,Immersion element controls (x2),Cotherm BBSC0131 (cut-out S89 °C -10K; Feb 2017),stored with the cylinders,2017,,,Out of service since 2018; swap procedure A7
 C04,Heating & DHW,Expansion vessels + expansion relief valves (cylinders),per cylinder kit,plant room,2017 (replacement planned),12 months,,Tundish drips under investigation
 V01,Heating & DHW,Zone valve TF (2nd-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
 V02,Heating & DHW,Zone valve MF (1st-floor radiators),2-port,plant room,2017,,,Head disconnected; manual override latched
@@ -22,7 +22,7 @@ H01,Cooling & air,Portable air conditioner,Tuya-based (local control),bedroom,,f
 H02,Cooling & air,Air purifiers (x2) + purifier/humidifier,vendor cloud,various,,filters as per manual,,IAQ actuators
 H03,Cooling & air,Electric fireplace,BLE-controlled,lounge,,annual,,Blower fault open
 P01,Electrical,Boiler circuit,Wylex B6 30 mA RCBO,consumer unit,2017,RCD test 6-monthly,,Supplies the junction box and timer
-P02,Electrical,Water heater circuit,Wylex B16 30 mA RCBO,consumer unit,2017,RCD test 6-monthly,,Off: immersions disconnected
+P02,Electrical,Water heater circuit,Wylex B16 30 mA RCBO,consumer unit,2017,RCD test 6-monthly,,Off: immersions disconnected; feeds both immersion isolators: use one immersion at a time
 P03,Electrical,Intruder alarm circuit (builder-installed alarm),Wylex B6 30 mA RCBO,consumer unit,2017,,,Off: alarm unused
 P04,Electrical,Lighting / outside lights / socket circuits,Wylex RCBOs (B6 / B32),consumer unit,2017,RCD test 6-monthly,,Full circuit chart to complete
 P05,Electrical,Electrical installation (whole house),,whole house,2017,EICR 10 years (owner-occupied) or on change,,
