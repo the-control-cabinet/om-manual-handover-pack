@@ -17,6 +17,74 @@
 
 ---
 
+## Status at a glance
+
+| Item | Status |
+|---|---|
+| Asset register (whole house, by system) | ✅ Populated ([data/asset-register.csv](data/asset-register.csv)) |
+| Planned maintenance schedule | ✅ Written, 30+ tasks ([doc 02](docs/02-maintenance-schedule.md)) |
+| Modification register M1-M7 with records and reversals | ✅ Written ([doc 03](docs/03-records-and-reversals.md)) |
+| Open and closed checks from the heating-controls course | ✅ Tracked: 1 closed, 5 open (incl. boiler earth, bypass, slow leak) |
+| Isolation points and devices never to be bypassed | ✅ Written ([doc 04](docs/04-safety-critical-devices-and-isolation.md)) |
+| System index to every system repo | ✅ Written ([doc 05](docs/05-system-index.md)) |
+| Circuit chart; first timed restore test | ⏳ To do |
+
+## Why a handover pack for a house
+
+At practical completion, a commercial client receives an O&M manual: what's installed, how it's maintained, what was changed and how to undo it, and what must never be bypassed. Most houses have none of that, which is how a boiler ends up with no automatic bypass and a supply flex with no earth core for years. This pack treats the house as a building with its own services and documents it the way a facilities manager would expect to receive it.
+
+## How the pack is organised
+
+```mermaid
+flowchart TB
+    AR["01 Asset register<br/>what's installed"] --> MS["02 Planned maintenance<br/>what, how often, who"]
+    AR --> RR["03 Records and reversals<br/>what changed, how to undo it,<br/>open checks"]
+    AR --> SC["04 Safety-critical devices<br/>isolation points, never-bypass list,<br/>re-energisation"]
+    AR --> SI["05 System index<br/>links to every system repo"]
+```
+
+## Modification register (summary)
+
+| # | Modification | Date | Reversal documented |
+|---|---|---|---|
+| M1 | Evohome replaced the original controls | 2018 | ✅ Reversal procedure and commissioning tests |
+| M2 | Immersion element controls removed, CS92 sensors fitted | 2018 | ✅ Immersion backup swap procedure |
+| M3 | Non-invasive plant monitoring added | 2026 | ✅ Remove sensors |
+| M4 | Junction box tidy-up (Wagos, opto board, labels) | Nov 2026 (planned) | ✅ Control wiring unchanged in function |
+| M5 | OpenTherm control | Planned | ✅ Changeover to Mode A |
+| M6 | Wi-Fi access points converted to AiMesh nodes | Nov 2026 | ✅ Per node: back to standalone from its recorded plan |
+| M7 | RAMSES gateway auto-restart (software) | Nov 2026 | ✅ Disable the automation |
+
+## Open checks (from a heating-controls wiring course, Oct 2026)
+
+| # | Check | Status |
+|---|---|---|
+| 1 | Radiator zone valves in manual override: how far open? | ⏳ Open |
+| 2 | Pump overrun / minimum-flow path: **no automatic bypass** found; the boiler manual requires one | ⚠️ Likely non-compliant: Gas Safe visit |
+| 3 | Unvented cylinder high-limit cut-outs in series with each valve | ✅ Closed (verified on both) |
+| 4 | **Boiler supply flex has no earth core** | ⏳ Open, high priority |
+| 5 | Slow pressure leak on the sealed circuit (top-up about every two weeks) | ⏳ Open: Gas Safe visit |
+| 6 | Cylinder panel cable earths cut at the junction box entry | ⏳ Open (tidy-up) |
+
+## Maintenance highlights
+
+| Task | Interval | Who |
+|---|---|---|
+| Boiler service + fault history read (look for L1) | Annual | Gas Safe engineer |
+| Unvented cylinder inspection (relief valves, expansion vessels, high limits) | Annual | G3-qualified installer |
+| RCD/RCBO test buttons | 6-monthly | Homeowner |
+| EICR | 10 years / change of occupancy | Registered electrician |
+| Smoke/CO alarm test; Aico interface function test | Monthly / annual | Homeowner |
+| Danfoss TS715Si back on permanent ON (it still gates hot water) | After any power cut | Homeowner |
+| **Disaster-recovery restore test** of the home automation head end | Annual | Homeowner |
+| Router and access-point firmware | Quarterly | Homeowner |
+
+The full schedule has 30+ tasks across heating, electrical, fire, security, water, energy and the head end.
+
+## Never bypass
+
+Cylinder overheat cut-outs and relief valves, the immersion's own element control when it's used, boiler internal limits, smoke/heat/CO alarms and their interface, and RCBOs. Isolation points for every kind of work (with the boiler RCBO as the only supply to the heating junction box) are in [doc 04](docs/04-safety-critical-devices-and-isolation.md).
+
 ## Documents
 
 | Doc | Contents |

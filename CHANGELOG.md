@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.4.1] - 2026-11-03
+- README expanded: status, why a house handover pack, structure diagram, modification register and open checks inline, maintenance highlights, never-bypass list.
+
 ## [0.4.0] - 2026-11-02
 - Records: M6 Wi-Fi access points converted to AiMesh nodes (with reversal), M7 RAMSES gateway auto-restart.
 - Asset register: gateway moved to the landing (RF stall open, watchdog), router updated, access points added (I06).
