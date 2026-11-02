@@ -16,7 +16,7 @@ E03,Heating controls,UFH zone controller,Honeywell HCC80R + HCS80,understairs ma
 E04,Heating controls,HR92 radiator heads + T87RF wall stats,Honeywell,throughout,2018,batteries as reported,,
 E05,Heating controls,Cylinder sensors (x2),Honeywell CS92,cylinder element-head top pockets,2018,,,Add heat-transfer paste
 E06,Heating controls,Hot-water timeswitch,Danfoss TS715Si,utility room,2017,,,Permanent ON; gates both hot-water relays
-E07,Heating controls,RAMSES-II gateway,ESP-based 868 MHz gateway,PC (interim),2026,,,Wall-adapter connectivity issue open
+E07,Heating controls,RAMSES-II gateway,ESP-based 868 MHz gateway,landing (wall adapter),2026,firmware as released,,RF stall open upstream (#50); auto-restart watchdog in HA
 J01,Heating controls,Heating junction box,Installer's external box,plant room,2017,annual check,,Terminal map in the Evohome repo (A4)
 H01,Cooling & air,Portable air conditioner,Tuya-based (local control),bedroom,,filter as per manual,,Heating/cooling interlock planned
 H02,Cooling & air,Air purifiers (x2) + purifier/humidifier,vendor cloud,various,,filters as per manual,,IAQ actuators
@@ -44,7 +44,8 @@ L02,Lighting & shading,Motorised blinds,Hunter Douglas PowerView Gen 2 (hub),var
 I01,Head end & networks,Home Assistant host,mini PC (HAOS),control room,2026,backups monthly verified; DR test annual,,head-end-health repo
 I02,Head end & networks,Zigbee coordinator,Sonoff ZBDongle-P (Zigbee2MQTT),control room,2026,,,~93 devices
 I03,Head end & networks,ESPHome fleet,ESP32 / ESP32-S3 boards (13 devices),throughout,2026,update one board first,,esphome-fleet-standards repo
-I04,Head end & networks,Router + mesh access points,ASUS RT-BE88U (AiMesh),various,,firmware quarterly,,No inbound ports for HA
+I04,Head end & networks,Router,ASUS RT-BE88U (AiMesh router),control room,,firmware quarterly,2026-11,No inbound ports for HA; per-client RSSI to HA via AsusRouter
 I05,Head end & networks,Remote access,Home Assistant Cloud,,,,,Encrypted relay
 G01,Outdoor,Robot mower,Bosch Indego,garden,,annual service; blades as needed,,
 A01,Appliances,Washing machine + tumble dryer (monitored),vibration sensors,utility,,,,Cycle-done notifications; water sub-metering
+I06,Head end & networks,Wi-Fi access points (4),ASUS RP-AX58 (AiMesh nodes; Ethernet backhaul),throughout,,firmware with the router,2026-11,Shared channels with the router (no per-node channel setting on these models); node status card and AP-offline alert in HA

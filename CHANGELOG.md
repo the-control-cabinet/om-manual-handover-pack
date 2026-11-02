@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.4.0] - 2026-11-02
+- Records: M6 Wi-Fi access points converted to AiMesh nodes (with reversal), M7 RAMSES gateway auto-restart.
+- Asset register: gateway moved to the landing (RF stall open, watchdog), router updated, access points added (I06).
+- System index: link to the new home network monitoring repo.
+
 ## [0.3.1] - 2026-10-31
 - Checks: boiler earth (high priority), slow pressure leak, cylinder panel earths; fault history recorded against the bypass check.
 - Maintenance: boiler pressure top-up log; cylinder expansion vessel and relief valves.
